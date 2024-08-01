@@ -1,8 +1,8 @@
 import React from "react";
-import SecondaryLogo from "../../assets/I (2).png";
+import SecondaryLogo from "@/app/assets/I (2).png";
 import Image from "next/image";
-import styles from "../../styling/about.module.css";
-import CreatorImg from "../../assets/CurrentHeadshot - Copy.jpeg";
+import styles from "../styling/about.module.css";
+import CreatorImg from "@/app/assets/CurrentHeadshot - Copy.jpeg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";

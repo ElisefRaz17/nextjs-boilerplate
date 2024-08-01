@@ -2,9 +2,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat } from "@next/font/google";
 import { Inter } from "next/font/google";
-import { Providers } from "../../context/redux.provider";
+import { Providers } from "@/context/redux.provider";
 import Header from "./components/Header";
-import { AspirationContext, AspirationProvider } from "../../context/aspiration.provider";
+import { AspirationContext,AspirationProvider } from "@/context/aspiration.provider";
 import Footer from "./components/Footer";
 
 const monstserrat = Montserrat({

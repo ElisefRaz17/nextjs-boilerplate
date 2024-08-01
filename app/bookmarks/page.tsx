@@ -1,11 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import {useAppSelector, useAppDispatch } from "../../../redux/hooks";
-import {
-  getBookmarksFromFirebaseDB,
-  removeAspirationFromBookmarks,
-} from "../../../redux/features/bookmarkThunk";
+import { useAppSelector, useAppDispatch } from "@/redux/hooks";
+import { getBookmarksFromFirebaseDB, removeAspirationFromBookmarks } from "@/redux/features/bookmarkThunk";
 import { Toaster } from "react-hot-toast";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AnimatedWrapper from "../components/AnimationWrapper";

@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { AspirationThunkProp } from "../../types/aspiration.type";
-import { UserProps } from "../../types/aspiration.type";
+import { AspirationThunkProp } from "@/app/types/aspiration.type";
+import { UserProps } from "@/app/types/aspiration.type";
 
 
 interface BookMarkState {

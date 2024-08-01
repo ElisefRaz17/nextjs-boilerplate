@@ -1,13 +1,12 @@
 "use client";
 
 import { useContext, useEffect } from 'react';
-import womenInTechnology from '../../../data/aspirations';
-import { useAppSelector } from "../../../redux/hooks";
+import womenInTechnology from '@/data/aspirations';
+import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import AspirationCard from "../components/AspirationCard";
 import AnimatedWrapper from "../components/AnimationWrapper";
-import { getBookmarksFromFirebaseDB } from "../../../redux/features/bookmarkThunk";
-import { useAppDispatch } from '../../../redux/hooks';
-import { AspirationContext } from '../../../context/aspiration.provider';
+import { getBookmarksFromFirebaseDB } from '@/redux/features/bookmarkThunk';
+import { AspirationContext } from '@/context/aspiration.provider';
 
 
 export default function Home() {

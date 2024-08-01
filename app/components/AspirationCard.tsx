@@ -2,21 +2,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useAppSelector, useAppDispatch } from "../../../redux/hooks";
-import {
-  addAspirationToBookmarkedDB,
-  removeAspirationFromBookmarks,
-} from "../../../redux/features/bookmarkThunk";
-import { AspirationCardProps} from "../../../types/aspiration.type";
+import { useAppSelector, useAppDispatch } from "@/redux/hooks";
+import { addAspirationToBookmarkedDB, removeAspirationFromBookmarks } from "@/redux/features/bookmarkThunk";
+import { AspirationCardProps } from "../types/aspiration.type";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../../firebase.config";
+import { db } from "@/firebase.config";
 import { Toaster } from "react-hot-toast";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import Image from "next/image";
-import generalAvatar from "../../../public/generalAvatar.png";
 import { Button } from "@mui/material";
 export default function AspirationCard({
   aspirationId,

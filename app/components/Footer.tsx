@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/Logo.png";
+import Logo from "@/app/assets/Logo.png";
 import Image from "next/image";
 function Footer() {
   return (

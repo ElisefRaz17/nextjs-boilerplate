@@ -1,20 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
-import { googleSignIn } from "../../../redux/features/bookmarkThunk";
-import { setUser } from "../../../redux/features/bookmarkSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+import { googleSignIn } from "@/redux/features/bookmarkThunk";
+import { setUser } from "@/redux/features/bookmarkSlice";
 import { usePathname } from "next/navigation";
 import { onAuthStateChanged } from "firebase/auth";
-import {
-  getBookmarksFromFirebaseDB,
-  logout,
-} from "../../../redux/features/bookmarkThunk";
-import { auth } from "../../../firebase.config";
+import { getBookmarksFromFirebaseDB, logout } from "@/redux/features/bookmarkThunk";
+import { auth } from "@/firebase.config";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../assets/I (3).png";
+import Logo from "./../Logo.png";
 import styles from "../../styling/navbar.css";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";

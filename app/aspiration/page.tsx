@@ -6,8 +6,8 @@ import {
   type ShowMoreRef,
   type ShowMoreToggleLinesFn,
 } from "@re-dev/react-truncate";
-import womenInTechnology from "../../../data/aspirations";
-import styles from "../../styling/aspiration.module.css";
+import womenInTechnology from "@/data/aspirations";
+import styles from "./../styling/aspiration.module.css"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
 import Favorite from "@mui/icons-material/Favorite";
@@ -20,7 +20,7 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { AspirationContext } from "../../../context/aspiration.provider";
+import { AspirationContext } from "@/context/aspiration.provider";
 
 function Page(props: any) {
   const [randomNum, setRandomNum] = React.useState(0);

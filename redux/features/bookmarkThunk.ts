@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { RootState } from "../store";
-import { AspirationThunkProp } from "../../types/aspiration.type";
+import { AspirationThunkProp } from "@/app/types/aspiration.type";
 import {
   setDoc,
   deleteDoc,

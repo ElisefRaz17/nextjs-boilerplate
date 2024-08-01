@@ -1,7 +1,7 @@
 "use client";
 
 import React, { EventHandler, useContext, useEffect, useState } from "react";
-import HeroImage from "../assets/HeroImage.png";
+import HeroImage from "@/app/assets/HeroImage.png";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -12,8 +12,8 @@ import Link from "next/link";
 // import { AspirationContext } from "./context";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { AspirationContext } from "../../context/aspiration.provider";
-import styles from "../styling/hero.module.css";
+import { AspirationContext } from "@/context/aspiration.provider";
+import styles from "./styling/hero.module.css"
 
 function Hero() {
   const { aspiration, setAspiration } = useContext(AspirationContext);

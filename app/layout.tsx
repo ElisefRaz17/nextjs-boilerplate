@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className="">
-      <body className={`${monstserrat.className} min-h-screen flex flex-col`}>
+      <body className={`${monstserrat.className} min-h-screen flex flex-col bg-gradient-to-r from-pink-100 to-pink-400`}>
         <Providers>
           <Header />
           <AspirationProvider>

@@ -28,10 +28,10 @@ function Page(props: any) {
   const [routeState, setRouteState] = React.useState({});
   const inputRef = useRef<HTMLInputElement | null>(null);
   const { aspiration } = useContext(AspirationContext);
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    inputRef.current?.focus(); /** used to stop rerendering when Like button is clicked */
-  };
+  // const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+  //   e.preventDefault();
+  //   inputRef.current?.focus(); /** used to stop rerendering when Like button is clicked */
+  // };
 
   const ref = useRef<ShowMoreRef>(null);
   const toggleLines: ShowMoreToggleLinesFn = (e) => {
@@ -148,7 +148,6 @@ function Page(props: any) {
                 </p>
                 <Link href="/dashboard" passHref>
                   <Button
-                    onClick={handleClick}
                     className={styles.moreBtn}
                     sx={{ backgroundColor: "#9CB2FF" }}
                     type="button"
@@ -214,7 +213,6 @@ function Page(props: any) {
                 </p>
                 <Link href="/dashboard" passHref>
                   <Button
-                    onClick={handleClick}
                     className={styles.moreBtn}
                     sx={{ backgroundColor: "#9CB2FF" }}
                     type="button"
@@ -280,7 +278,6 @@ function Page(props: any) {
                 </p>
                 <Link href="/dashboard" passHref>
                   <Button
-                    onClick={handleClick}
                     className={styles.moreBtn}
                     sx={{ backgroundColor: "#9CB2FF" }}
                     type="button"
@@ -346,7 +343,6 @@ function Page(props: any) {
                 </p>
                 <Link href="/dashboard" passHref>
                   <Button
-                    onClick={handleClick}
                     className={styles.moreBtn}
                     sx={{ backgroundColor: "#9CB2FF" }}
                     type="button"
@@ -412,7 +408,6 @@ function Page(props: any) {
                 </p>
                 <Link href="/dashboard" passHref>
                   <Button
-                    onClick={handleClick}
                     className={styles.moreBtn}
                     sx={{ backgroundColor: "#9CB2FF" }}
                     type="button"
@@ -478,7 +473,6 @@ function Page(props: any) {
                 </p>
                 <Link href="/dashboard" passHref>
                   <Button
-                    onClick={handleClick}
                     className={styles.moreBtn}
                     sx={{ backgroundColor: "#9CB2FF" }}
                     type="button"

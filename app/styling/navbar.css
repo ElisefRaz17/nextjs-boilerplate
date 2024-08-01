@@ -1,0 +1,12 @@
+.navbar {
+    background-color: #FDFAEC;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    height: 100px;
+    opacity: 100%;
+    background-image: radial-gradient(#444cf7 0.5px, #FDFAEC 0.5px);
+    background-size: 10px 10px;
+  }

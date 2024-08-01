@@ -1,8 +1,17 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
+import { Montserrat } from "@next/font/google";
+import { Inter } from "next/font/google";
+import { Providers } from "../../context/redux.provider";
+import Header from "./components/Header";
+import { AspirationContext, AspirationProvider } from "../../context/aspiration.provider";
+import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const monstserrat = Montserrat({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-monstserrat",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,12 +20,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className="">
+      <body className={`${monstserrat.className} min-h-screen flex flex-col`}>
+        <Providers>
+          <Header />
+          <AspirationProvider>
+          {children}
+          </AspirationProvider>
+          <Footer/>
+        </Providers>
+      </body>
     </html>
   );
 }

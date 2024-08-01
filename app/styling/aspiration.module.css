@@ -1,0 +1,75 @@
+.container{
+    /* height:550px; */
+    padding-top: 8px;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    display: flex;
+    padding-right: 200px;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    padding-top: 20px;
+    gap: 2rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+}
+
+/* .favorite-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 245px;
+} */
+.moreBtn{
+     background-color: #9CB2FF;
+     color:white;
+     font-family:"Barlow";
+     .moreBtn:hover{
+        background-color: blueviolet;
+     }
+}
+.card{
+    width:342px;
+    height:580px;
+    align-self: center;
+    
+}
+.card-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    #link:hover{
+        color:pink;
+    }
+}
+.title{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.details{
+    display: flex;
+    margin-left: 10px;
+    flex: 1 1;
+    flex-direction: column;
+    background-color: white;
+    color:black;
+    border-radius:8px;
+    padding: 10px;
+}
+.area-interest{
+    font-family: 'Barlow';
+    font-weight: 400;
+}
+
+@media (max-width: 768px), (max-height: 550px) { 
+    /* .container{
+        height: 550px;
+    } */
+
+
+}

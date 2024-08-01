@@ -61,26 +61,26 @@ export default function Home() {
 
   return (
     <>
-    <div className='h-auto flex flex-col items-center justify-center px-4 py-4'>
-        <AnimatedWrapper>
-          <div className='grid grid-cols-4 max-md:grid-cols-2 gap-6 max-sm:grid-cols-1 gap-3 items-center max-sm:flex max-sm:justify-center max-sm:flex-col'>
-            {womenInTechnology.map((item) => {
-              return (
-                <div key={item?.id}>
-                  <AspirationCard
-                    name={item?.name as string}
-                    aspirationId={item?.id as number}
-                    image_path={item?.image_path as string}
-                    description={item?.details as string}
-                    role={item?.category as string}
-                    user={user} 
-                    website={item?.website as string}/>
-                </div>
-              );
-            })}
+{aspiration == "" && <div className='h-auto flex flex-col items-center justify-center px-4 py-4'>
+  <AnimatedWrapper>
+    <div className='grid grid-cols-4 max-md:grid-cols-2 gap-6 max-sm:grid-cols-1 gap-3 items-center max-sm:flex max-sm:justify-center max-sm:flex-col'>
+      {womenInTechnology.map((item) => {
+        return (
+          <div key={item?.id}>
+            <AspirationCard
+              name={item?.name as string}
+              aspirationId={item?.id as number}
+              image_path={item?.image_path as string}
+              description={item?.details as string}
+              role={item?.category as string}
+              user={user} 
+              website={item?.website as string}/>
           </div>
-        </AnimatedWrapper>
-      </div>
+        );
+      })}
+    </div>
+  </AnimatedWrapper>
+</div>}
       {aspiration === "Engineering" && <div className='h-auto flex flex-col items-center justify-center px-4 py-4'>
         <AnimatedWrapper>
           <div className='grid grid-cols-4 max-md:grid-cols-2 gap-6 max-sm:grid-cols-1 gap-3 items-center max-sm:flex max-sm:justify-center max-sm:flex-col'>

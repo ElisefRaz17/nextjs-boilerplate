@@ -22,7 +22,7 @@ function Footer() {
           alt="footer logo"
           style={{ paddingTop: "20px" }}
         />
-        <span style={{ padding: "20px", marginLeft: "auto" }}>
+        <span style={{ padding: "20px", marginLeft: "auto" }} className="text-black">
           {" "}
           Created by Elise | Beautiful Me Technologies &copy; 2024
         </span>
